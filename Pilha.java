@@ -12,12 +12,12 @@ public class Pilha {
 
     }
 
-    public void push(int elemento) {
+    public void push() {
 
     }
 
     public boolean isEmpty() {
-        return ;
+
     }
 
     public boolean isFull() {
