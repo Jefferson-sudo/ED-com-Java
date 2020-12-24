@@ -22,8 +22,8 @@ public class Conversor{
 		//Faze 2. Exibicao dos restos
 
 		while(!p.isEmpty()){
-			resto = p.pop(); //Desempilha
-			System.out.print(resto);
+			resto = p.pop();        //Desempilha
+			System.out.print(resto);//Mostra o resto, mostra o resultado que a gente quer. 
 		}
 		System.out.println("\nfim do programa!");
 	}

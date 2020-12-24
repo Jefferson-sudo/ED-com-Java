@@ -28,8 +28,8 @@ public class Pilha {
     }
 
     public int pop() {//Remove valores da pilha
-        int elem = valores[topo];
+        int elemento = valores[topo];
         topo --;
-        return elem;
+        return elemento;
     }
 }
