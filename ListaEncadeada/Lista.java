@@ -4,7 +4,7 @@ public class Lista{
 	
 
 	//Criando a lista vazia
-	public Lista(){
+	public Lista(){//Metado construtor
 		this.inicio = null;                   //O inicio da lista e vazio 
 	}	
 
@@ -14,7 +14,7 @@ public class Lista{
 
 		Caixinha nova = new Caixinha();
 		nova.setElemento(elemento);           //Insere o elemento na caixinha
-		nova.setProximo(null);                //Depois dela nao vem niguem. Ela é o primeito elemento da lista
+		nova.setProximo(null);                //Depois dela nao vem niguem. Ela é o primeiro elemento da lista
 
 		if(inicio == null){                   //Se estiver vazia, essa vai ser a 1 caixinha.
 			inicio = nova;                    //Inicio aponta pra nova caixinnha
@@ -24,7 +24,7 @@ public class Lista{
 			while(aux.getProximo() != null){  //Testa se o proximo elemento de aux é difetente de  null.
 				aux = aux.getProximo();       //Se não for nulo percorre mais um elemento ate achar o utimo elemento que é aquele que aponta para null
 			}
-			aux.setProximo(nova);             //Se o proximo elemento de aux for nulo a lista recebe mais um elemento.
+			aux.setProximo(nova);             //Se o proximo elemento de aux for nulo a lista recebe mais um elemento..Aponta pro utimo elemto da lista.(nova)
 		}
 	}
 
@@ -35,10 +35,10 @@ public class Lista{
 			System.out.println("Nada a exibir");
 		}else{										                //Se a lista possuir algum elemento
 			Caixinha aux = inicio;
+
 			while(aux.getProximo() != null){                        //Enquanto o proximo de aux nao for nullo. Ou seja, enquanto nao for o ultimo
 			System.out.println("Elemento visto "+aux.getElemento());//Imprima o elemto
 			aux = aux.getProximo();                                 //Percorre mais um elemento
-
 			}
 		}
 	}
