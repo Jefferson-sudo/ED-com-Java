@@ -1,22 +1,22 @@
-public class No{
-	private No proximo;
-	private Object elemento;
+public class No {
 
-	public No(Object elemento){
+	private int  elemento;
+	private No proximo;
+
+	public int getElemento(){
+		return this.elemento;
+	}
+
+	public void setElemento(int elemento){
 		this.elemento = elemento;
-		proximo = null;
 	}
 
 	public No getProximo(){
-		return proximo;
+		return this.proximo;
 	}
+
 	public void setProximo(No proximo){
 		this.proximo = proximo;
 	}
-	public  Object getElemento(){
-		return elemento;
-	}
-	public void setElemento(Object elemento){
-		this.elemento = elemento;
-	}
+
 }
